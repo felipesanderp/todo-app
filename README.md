@@ -22,7 +22,7 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/felipesanderp/todo-app.svg">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/felipesanderp/todo-app">
+  <img alt="GitHub" src="https://img.shields.io/github/license/felipesanderp/todo-app.svg">
 </p>
 
 <p align="center">
@@ -66,6 +66,8 @@ $ yarn start
 This project is under the MIT license. See the [LICENSE](https://github.com/felipesanderp/todo-app/blob/master/LICENSE) for more information.
 
 ---
+
+Made with ♥ by Felipe Sander :wave: [Get in touch!](https://www.linkedin.com/in/felipe-sander-panisson-641195161/)
 
 [yarn]: https://yarnpkg.com/
 [vc]: https://code.visualstudio.com/
