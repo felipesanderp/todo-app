@@ -8,14 +8,14 @@ export const Container = styled.button`
 
   width: 35px;
   height: 35px;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: #39b100;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s;
 
   &:hover {
-    background: ${shade(0.2, '#c72828')};
+    background: ${shade(0.2, '#39b100')};
   }
 
   svg {
