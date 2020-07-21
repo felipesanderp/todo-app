@@ -1,9 +1,9 @@
-import React from 'react';
-import { MdDelete } from 'react-icons/md';
+import React from "react";
+import { MdDelete } from "react-icons/md";
 
-import { Container, Item } from './styles';
+import { Container, Item } from "./styles";
 
-import Button from '../Button';
+import Button from "../Button";
 
 interface TodoProps {
   todo: {
@@ -28,7 +28,7 @@ const TodoItem: React.FC<TodoProps> = ({ todo, onDelete, onCompleted }) => {
       <Button
         type="button"
         onClick={onDelete}
-        style={{ backgroundColor: '#C72828' }}
+        style={{ backgroundColor: "#C72828" }}
       >
         <MdDelete size={19} />
       </Button>
