@@ -6,8 +6,8 @@ export const Container = styled.button`
   align-items: center;
   justify-content: center;
 
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: ${(props) => props.theme.colors.primary};
   border: 0;
   border-radius: 5px;
