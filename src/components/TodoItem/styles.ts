@@ -1,7 +1,10 @@
-import styled from 'styled-components';
-import { shade } from 'polished';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface TodoItemProps {
+  isCompleted: boolean;
+}
+
+export const Container = styled.div<TodoItemProps>`
   max-width: 700px;
   height: 60px;
   background: ${(props) => props.theme.colors.background};
@@ -18,6 +21,16 @@ export const Container = styled.div`
   & + div {
     margin-top: -30px;
   }
+
+  cursor: pointer;
+  transition: opacity 0.4s;
+
+  ${(props) =>
+    props.isCompleted &&
+    css`
+      text-decoration: line-through;
+      opacity: 0.3;
+    `}
 `;
 
 export const Item = styled.div`

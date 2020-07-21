@@ -12,12 +12,13 @@ interface TodoProps {
     complete: boolean;
   };
   onDelete: () => void;
+  onCompleted: () => void;
 }
 
-const TodoItem: React.FC<TodoProps> = ({ todo, onDelete }) => {
+const TodoItem: React.FC<TodoProps> = ({ todo, onDelete, onCompleted }) => {
   return (
-    <Container>
-      <Item>
+    <Container isCompleted={todo.complete}>
+      <Item onClick={onCompleted}>
         <div>
           <ul>
             <li>{todo.text}</li>

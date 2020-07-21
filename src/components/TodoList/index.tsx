@@ -52,6 +52,19 @@ const Todo: React.FC = () => {
     [setTodos, todos],
   );
 
+  const handleComplete = useCallback(
+    (id) => {
+      const findTodo = todos.findIndex((todo) => todo.id === id);
+
+      const temporaryTodos = [...todos];
+
+      temporaryTodos[findTodo].complete = !temporaryTodos[findTodo].complete;
+
+      setTodos(temporaryTodos);
+    },
+    [todos],
+  );
+
   return (
     <Container>
       <Form ref={formRef} onSubmit={handleAddTodo}>
@@ -62,6 +75,7 @@ const Todo: React.FC = () => {
       </Form>
       {todos.map((todo) => (
         <TodoItem
+          onCompleted={() => handleComplete(todo.id)}
           key={todo.id}
           todo={todo}
           onDelete={() => handleDeleteTodo(todo.id)}
