@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import Switch from "react-switch";
-import { ThemeContext } from "styled-components";
-import { shade } from "polished";
+import React, { useContext } from 'react';
+import Switch from 'react-switch';
+import { ThemeContext } from 'styled-components';
+import { shade } from 'polished';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 interface Props {
   toggleTheme(): void;
@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 
       <Switch
         onChange={toggleTheme}
-        checked={title === "dark"}
+        checked={title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}
         height={10}

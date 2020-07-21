@@ -1,7 +1,7 @@
-import React, { InputHTMLAttributes, useRef, useEffect } from "react";
-import { useField } from "@unform/core";
+import React, { InputHTMLAttributes, useRef, useEffect } from 'react';
+import { useField } from '@unform/core';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
@@ -15,7 +15,7 @@ const Input: React.FC<InputProps> = ({ name, ...rest }) => {
     registerField({
       name: fieldName,
       ref: inputRef.current,
-      path: "value",
+      path: 'value',
     });
   }, [fieldName, registerField]);
 
