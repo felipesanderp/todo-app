@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { shade } from 'polished';
+import styled from "styled-components";
+import { shade } from "polished";
 
 export const Container = styled.button`
   display: flex;
@@ -15,7 +15,7 @@ export const Container = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background: ${shade(0.2, '#39b100')};
+    background: ${shade(0.2, "#39b100")};
   }
 
   svg {
